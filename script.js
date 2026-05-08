@@ -11,7 +11,8 @@ button.addEventListener("click", function() {
     deleteBtn.innerText = "❌";
 
     deleteBtn.addEventListener("click", function() {
-        ul.removeChild(li);
+        // ul.removeChild(li);
+        li.remove();
     });
 
     li.appendChild(deleteBtn);
