@@ -1,0 +1,13 @@
+*{
+    background-color: black;
+    color: white;
+}
+
+#addBtn{
+    color: white;
+    background-color: green;
+}
+
+#forInput{
+    width: 900px;
+}
