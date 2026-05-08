@@ -11,3 +11,7 @@
 #forInput{
     width: 900px;
 }
+
+ul{
+    list-style: none;
+}
