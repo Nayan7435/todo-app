@@ -1,17 +1,4 @@
-*{
-    background-color: black;
-    color: white;
-}
-
-#addBtn{
-    color: white;
-    background-color: green;
-}
-
-#forInput{
-    width: 900px;
-}
-
-ul{
-    list-style: none;
+.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
 }

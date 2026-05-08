@@ -1,16 +1,69 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Simple Todo App</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <center>
-        <input type="text" id="forInput"    placeholder="Enter Your Task">
-        <button id="addBtn">Add Task</button>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modern Todo App</title>
 
-        <ul id="taskList"></ul>
-        <script src="script.js"></script>
-        </center>
-    </body>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body
+    class="bg-gray-900 text-white min-h-screen flex justify-center items-center"
+  >
+    <div class="w-full max-w-2xl bg-gray-800 p-6 rounded-2xl shadow-lg">
+      <h1 class="text-4xl font-bold text-center mb-6">📝 Todo App</h1>
+
+      <!-- Input Section -->
+      <div class="flex gap-2 mb-4">
+        <input
+          type="text"
+          id="taskInput"
+          placeholder="Enter task..."
+          class="flex-1 p-3 rounded-lg text-black"
+        />
+
+        <input type="date" id="dueDate" class="p-3 rounded-lg text-black" />
+
+        <button
+          id="addBtn"
+          class="bg-green-500 hover:bg-green-600 px-5 rounded-lg"
+        >
+          Add
+        </button>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="flex gap-2 mb-5 justify-center">
+        <button
+          class="filterBtn bg-blue-500 px-4 py-2 rounded"
+          data-filter="all"
+        >
+          All
+        </button>
+
+        <button
+          class="filterBtn bg-yellow-500 px-4 py-2 rounded"
+          data-filter="pending"
+        >
+          Pending
+        </button>
+
+        <button
+          class="filterBtn bg-green-500 px-4 py-2 rounded"
+          data-filter="completed"
+        >
+          Completed
+        </button>
+      </div>
+
+      <!-- Task List -->
+      <ul id="taskList" class="space-y-3"></ul>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
